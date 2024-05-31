@@ -3,6 +3,7 @@ import useCurrencyInfo from './Customhooks/useCurrencyinfo'
 import InputBox from './components/Inputbox'
 import { Searchbar } from './components/Searchbar'
 import CountryInfo from './Customhooks/UseCountryInfo'
+import { bgImage } from './components/Index'
 
 function App() {
   const [amount, setAmount] = useState(0)
@@ -32,7 +33,7 @@ function App() {
     <div
         className="w-full h-screen flex  justify-center items-center bg-cover bg-no-repeat object-cover  "
         style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1580519542036-c47de6196ba5?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+            backgroundImage: `url(${bgImage})`,
             backgroundSize: 'cover',
             
         }}
