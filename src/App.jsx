@@ -14,18 +14,15 @@ function App() {
   const countryNames = CountryInfo()
   const updateCountryNames = Object.values(countryNames)
 
-  // USING/CALLING OUR CUSTOM HOOK TO FETCH CURRENCY INFO 
   const currencyInfo=useCurrencyInfo(from)
 
   const options=Object.keys(currencyInfo)
-// FUNCTION TO SWAP UPPER AND LOWER INPUT BOX THAT IS FROM TO VALUES
   const swap=()=>{
     setFrom(To)
     setTo(from)
     setConvertedAmount(amount)
     setAmount(convertedAmount)
   }
-// FUNCTION TO CONVERT THE MONEY
   const convert=()=>{
     setConvertedAmount(amount * currencyInfo[To])
   }
@@ -50,7 +47,6 @@ function App() {
                        
                     }}
                 >
-                    {/* // FROM BOX PART VALUE ASSIGNING USING OUR PRE DEFINED COMPONENT INPUT BOX */}
                     <div className="w-full mb-1">
                         <InputBox
                             label="From"
@@ -72,7 +68,6 @@ function App() {
                         </button>
                     </div>
 
-                    {/* // TO BOX PART VALUE ASSIGNING USING OUR PRE DEFINED COMPONENT INPUT BOX */}
                     <div className="w-full mt-1 mb-4">
                         <InputBox
                             label="To"
@@ -109,3 +104,4 @@ function App() {
                   }
 
 export default App
+
