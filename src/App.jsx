@@ -36,7 +36,7 @@ function App() {
         }}
     >
        
-        <div className="w-full">
+        <div className="w-full p-7">
             <div className="w-full max-w-md mx-auto border border-black border-solid rounded-xl p-5 backdrop-blur-sm bg-white/30">
                 <h1 className='text-4xl font-bold text-center py-2 pb-4'>Currency Converter</h1>
                 <form 
@@ -84,7 +84,7 @@ function App() {
                 </form>
             </div>
         </div>
-        <div className='w-4/12 backdrop-blur-sm shadow-2xl border rounded-lg border-black h-full max-md:w-full overflow-y-scroll'>
+        <div className='w-4/12 backdrop-blur-sm shadow-2xl border rounded-lg border-black h-full max-md:w-full  hidden md:block overflow-y-scroll'>
             <div  className='m-10'><h2 className=' text-center font-bold text-xl text-orange-900 mb-2'>List of Countries <br/>with their currency name</h2>
             <Searchbar setSearch={setSearch} />
                 <ul>
